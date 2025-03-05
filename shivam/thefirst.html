@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>calculator</title>
+  <link rel="stylesheet" href="thefirst.css">
+</head>
+<body>
+  <div id="cover">by shivam yadav
+    <input type= "text" id="display" readonly>
+    <div class=" hedbutton">
+      
+    <button class="button" onclick="cartdisplay =  '';document.querySelector('#display').value =cartdisplay;">c</button>
+
+    <button class="button " onclick="cartdisplay = cartdisplay + '1'; document.querySelector('#display').value = cartdisplay;">1</button>
+
+    <button class="button" onclick="cartdisplay = cartdisplay + '2'; document.querySelector('#display').value = cartdisplay;">2</button>
+
+    <button class="button"onclick="cartdisplay = cartdisplay + '+'; document.querySelector('#display').value = cartdisplay;">+</button>
+
+    <button class="button"onclick="cartdisplay = cartdisplay + '3'; document.querySelector('#display').value = cartdisplay;">3</button>
+
+    <button class="button" onclick="cartdisplay = cartdisplay + '4'; document.querySelector('#display').value = cartdisplay;">4</button>
+
+    <button class="button" onclick="cartdisplay = cartdisplay + '-'; document.querySelector('#display').value = cartdisplay;">-</button>
+
+    <button class="button" onclick="cartdisplay = cartdisplay + '5'; document.querySelector('#display').value = cartdisplay;">5</button>
+
+    <button class="button" onclick="cartdisplay = cartdisplay + '6'; document.querySelector('#display').value = cartdisplay;">6</button>
+
+    <button class="button" onclick="cartdisplay = cartdisplay + '*'; document.querySelector('#display').value = cartdisplay;">*</button>
+
+    <button class="button" onclick="cartdisplay = cartdisplay + '7'; document.querySelector('#display').value = cartdisplay;">7</button>
+
+    <button class="button" onclick="cartdisplay = cartdisplay + '8'; document.querySelector('#display').value = cartdisplay;">8</button>
+    
+    <button class="button" onclick="cartdisplay = cartdisplay + '/'; document.querySelector('#display').value = cartdisplay;">/</button>
+      
+    <button class="button"onclick=" let result = eval(cartdisplay); cartdisplay = result; document.querySelector('#display').value = cartdisplay;">=</button>
+
+    <button class="button" onclick="cartdisplay = cartdisplay + '9'; document.querySelector('#display').value = cartdisplay;">9</button>
+
+    <button class="button" onclick="cartdisplay = cartdisplay + '0'; document.querySelector('#display').value = cartdisplay;">0</button>
+
+    <button class="button" onclick="cartdisplay = cartdisplay + '.'; document.querySelector('#display').value = cartdisplay;">.</button>
+  </div>
+  </div>
+  <script>
+    let cartdisplay ='';document.querySelector('#display').value = cartdisplay;
+  </script>
+</body>
+</html>
